@@ -24,6 +24,10 @@ bot = telebot.TeleBot(bot_token)
 
 def start_flask():
     subprocess.Popen(["python", "app.py"])
+
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+	bot.reply_to(message, "Howdy, Send me video url for download video.")
     
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
