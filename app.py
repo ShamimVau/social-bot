@@ -1,9 +1,9 @@
-from flask import Flask, render_template_string
-app = Flask(__name__)
-@app.route('/')
-def home():
-    html_content = '**SERVER RUNNING**'
-    return render_template_string(html_content)
-
+from flask import Flask
+from threading import Thread
+app=Flask("")
+@app.route("/")
+def main():
+    return "<h1>***SERVER RUNNING***</h1>"
+Thread(target=app.run,args=("0.0.0.0",8080)).start()
 if __name__ == '__main__':
-    app.run(debug=False)
+  main ()
