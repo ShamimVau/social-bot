@@ -4,6 +4,14 @@
 </p>
 <p align="center">A simple python social media video downloader bot.</p>
 
+### Available downloaders
+- [X] FACEBOOK
+- [X] INSTAGRAM
+- [X] TWITTER
+- [X] YOUTUBE
+- [X] TERABOX
+
+
 ### Install
 1. Clone this repo.
 ````
@@ -26,6 +34,8 @@ python bot.py
 ### Run on replit
 
 [![Run on Repl.it](https://repl.it/badge/github/Th30neAnd0nly/TrackDown)](https://repl.it/github/anbuinfosec/social-bot)
+
+**Go to secret and edit telegram bot key and apikey. Then run project.**
 
 ---
  ## 🌐 Socials:
